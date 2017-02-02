@@ -129,15 +129,59 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   width: 100%;
   background: #fff; }
   .header .logo {
-    float: left; }
+    float: left;
+    margin: 15px 0 0 9px; }
   .header .header-nav {
-    float: right; }
+    float: right;
+    margin: 25px 0; }
+    .header .header-nav li + li {
+      margin: 0 23px; }
     .header .header-nav li {
-      display: inline-block; }
+      display: inline-block;
+      font-size: 16px; }
       .header .header-nav li a {
         font-size: 16px; }
         .header .header-nav li a:hover {
           color: #ef6223; }
+
+.main .inner-block h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px; }
+
+.main .inner-block span {
+  font-size: 28px;
+  color: #fff; }
+
+.main .inner-block .inner-form {
+  margin-top: 50px;
+  width: 850px;
+  min-height: 125px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 25px 31px 0 31px; }
+
+.main .inner-block .first-form * {
+  margin-left: 4px; }
+
+.main .inner-block .form-control {
+  height: 57px;
+  width: 325px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  font-size: 16px;
+  color: #7e878d;
+  padding-left: 17px; }
+
+.main .inner-block .form-btn {
+  height: 57px;
+  width: 115px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  background-color: #f26523;
+  color: #fff; }
 
 .inner {
   height: -webkit-calc( 100vh - 80px);

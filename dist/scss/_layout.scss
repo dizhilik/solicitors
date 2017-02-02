@@ -11,17 +11,63 @@
 	background: #fff;
 	.logo{
 		float: left;
+		margin: 15px 0 0 9px;
 	}
 	.header-nav{
 		float: right;
+		margin: 25px 0;
+		li + li{
+			margin: 0 23px;
+		}
 		li{
 			display: inline-block;
+			font-size: 16px;
 			a{
 				font-size: 16px;
 				&:hover{
 					color:$generalOrange;
 				}
 			}
+		}
+	}
+}
+.main{
+	.inner-block{
+		h1{
+			font-size: 72px;
+			font-weight: bold;
+			color: #fff;
+			margin-bottom: 30px;
+		}
+		span{
+			font-size: 28px;
+			color: #fff;
+		}
+	.inner-form{
+		margin-top: 50px;
+		width: 850px;
+		min-height: 125px;
+		border-radius: 2px;
+		background: rgba(0, 0, 0, 0.45);
+		padding: 25px 31px 0 31px;
+	}
+		.first-form *{
+			margin-left: 4px;
+		}
+		.form-control{
+			height: $generalHeightInput;
+			width: $generalWidthInput;
+			border-radius: $generalRadiusInput; 
+			font-size: 16px;
+			color: #7e878d;
+			padding-left: 17px;
+		}
+		.form-btn{
+			height: $genegalHightButton;
+			width: $genegalWidthButton;
+			border-radius: $generalRadiusInput; 
+			background-color: $genegalColorButton;
+			color: $genegalColorTextButton; 
 		}
 	}
 }

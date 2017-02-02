@@ -1,0 +1,27 @@
+@import "custom-variables";
+
+.container{
+	width: $desktopContainerWidth;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.header{
+	height: $desktopHeaderHeight;
+	width: 100%;
+	background: #fff;
+	.logo{
+		float: left;
+	}
+	.header-nav{
+		float: right;
+		li{
+			display: inline-block;
+			a{
+				font-size: 16px;
+				&:hover{
+					color:$generalOrange;
+				}
+			}
+		}
+	}
+}

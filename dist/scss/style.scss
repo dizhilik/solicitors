@@ -1,0 +1,13 @@
+@import "custom-variables";
+@import "fonts";
+@import "reset";
+@import "default-clases";
+@import "layout";
+
+.inner{
+	@extend %vertical-aling;
+	height: calc( 100vh - 80px);
+	background: url("../img/inner-bg.jpg") no-repeat top center;
+	background-size: cover;
+	text-align: center;
+}

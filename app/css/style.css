@@ -144,17 +144,7 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
         .header .header-nav li a:hover {
           color: #ef6223; }
 
-.main .inner-block h1 {
-  font-size: 72px;
-  font-weight: bold;
-  color: #fff;
-  margin-bottom: 30px; }
-
-.main .inner-block span {
-  font-size: 28px;
-  color: #fff; }
-
-.main .inner-block .inner-form {
+.main .inner-form {
   margin-top: 50px;
   width: 850px;
   min-height: 125px;
@@ -162,26 +152,20 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
           border-radius: 2px;
   background: rgba(0, 0, 0, 0.45);
   padding: 25px 31px 0 31px; }
-
-.main .inner-block .first-form * {
-  margin-left: 4px; }
-
-.main .inner-block .form-control {
-  height: 57px;
-  width: 325px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  font-size: 16px;
-  color: #7e878d;
-  padding-left: 17px; }
-
-.main .inner-block .form-btn {
-  height: 57px;
-  width: 115px;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
-  background-color: #f26523;
-  color: #fff; }
+  .main .inner-form .form-control {
+    height: 57px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    font-size: 16px;
+    color: #7e878d;
+    padding-left: 17px; }
+  .main .inner-form .form-btn {
+    height: 57px;
+    width: 115px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    background-color: #f26523;
+    color: #fff; }
 
 .inner {
   height: -webkit-calc( 100vh - 80px);
@@ -189,3 +173,19 @@ input, textarea, input:before, textarea:before, input:after, textarea:after {
   background: url("../img/inner-bg.jpg") no-repeat top center;
   background-size: cover;
   text-align: center; }
+
+.inner-block h1 {
+  font-size: 72px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px; }
+
+.inner-block span {
+  font-size: 28px;
+  color: #fff; }
+
+.inner-form .form-control {
+  width: 325px; }
+
+.first-form input + input {
+  margin-left: 4px; }

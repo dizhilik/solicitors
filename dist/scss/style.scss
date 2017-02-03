@@ -11,3 +11,21 @@
 	background-size: cover;
 	text-align: center;
 }
+.inner-block{
+	h1{
+		font-size: 72px;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	span{
+		font-size: 28px;
+		color: #fff;
+	}
+}
+.inner-form .form-control{
+	width: 325px;
+}
+.first-form input + input{
+	margin-left: 4px;
+}

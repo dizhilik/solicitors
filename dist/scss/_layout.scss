@@ -32,17 +32,6 @@
 	}
 }
 .main{
-	.inner-block{
-		h1{
-			font-size: 72px;
-			font-weight: bold;
-			color: #fff;
-			margin-bottom: 30px;
-		}
-		span{
-			font-size: 28px;
-			color: #fff;
-		}
 	.inner-form{
 		margin-top: 50px;
 		width: 850px;
@@ -50,13 +39,8 @@
 		border-radius: 2px;
 		background: rgba(0, 0, 0, 0.45);
 		padding: 25px 31px 0 31px;
-	}
-		.first-form *{
-			margin-left: 4px;
-		}
-		.form-control{
+	    .form-control{
 			height: $generalHeightInput;
-			width: $generalWidthInput;
 			border-radius: $generalRadiusInput; 
 			font-size: 16px;
 			color: #7e878d;

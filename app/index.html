@@ -3,6 +3,7 @@
 	<meta charset="utf-8" >
 	<title>Lesson</title>
 	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link media="all" rel="stylesheet" href="css/jquery.formstyler.css" type="text/css" >
 	<link media="all" rel="stylesheet" href="css/style.css" type="text/css" >
 </head>
 <body>
@@ -16,7 +17,7 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles </a></li>
 				<li><a href="#"> Contact </a></li>
-				<li><a href="#"></a></li>
+				<li><a href="#"><span class="icon serch-ic"></span></a></li>
 			</ul>
 		</div>
 	</div>
@@ -28,14 +29,299 @@
 				<div class="inner-form">
 					<form>
 						<div class="first-form">
-						<input type="text" name="area" class="form-control" placeholder="Area of practice, e.g. commercial law">
-						<input type="text" name="country" class="form-control" placeholder="County, city or postcode">
-						<input type="submit" value="SEARCH" class="form-btn">
+							<input type="text" name="area" class="form-control" placeholder="Area of practice, e.g. commercial law">
+							<input type="text" name="country" class="form-control" placeholder="County, city or postcode">
+							<input type="submit" value="SEARCH" class="form-btn">
+						</div>
+						<span class="more-option">+ More Option</span>
+						<div class="second-form">
+							<div class="input-group">
+								<div class="input-group-text">
+									<label for="choose-languages">Languages</label>
+									<select name="choose-languages">
+										<option selected disabled>All Languages  </option>
+										<option value="">English</option>
+										<option value="">Italic</option>
+									</select>
+								</div>
+								<div class="input-group-text">
+									<label for="name">Name</label>
+									<input type="text" name="name" placeholder="e.g. Joe Bloggs">
+								</div>
+								<div class="input-group-text">
+									<label for="sraid">SRA ID</label>
+									<input type="text" name="sraid" placeholder="">
+								</div>
+							</div>
+							<div class="input-group">
+								<input type="checkbox" name="legal" id="legal">
+								<label for="legal">Accepts legal aid</label>
+								<input type="checkbox" name="access" id="access">
+								<label for="access">Disabled access</label>
+								<input type="checkbox" name="loops" id="loops">
+								<label for="loops">Hearing loops</label>
+								<input type="checkbox" name="language" id="language">
+								<label for="language">Sign language</label>
+							</div>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+		<div class="slogan">
+       		<div class="container">
+           		<p >We provide access to over 15,000 qualified solicitors in the UK in 700 areas of international law.<a href="#"> Find a solicitor now </a></p>
+           	</div>
+        </div>
+        <div class="service-wrap">
+        	<div class="container">
+        		<div class="row">
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon home-ic"></span>
+        					<h1>Commercial property <span>(6298)</span></h1></a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon keys-ic"></span>
+        					<h1>Business and Commercial  <span>(6333)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon admin-ic"></span>
+        					<h1>Employment <span>(2305)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon commers-ic"></span>
+        					<h1>Commercial litigation <span>(2590)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon hands-ic"></span>
+        					<h1>Advocacy <span>(1774)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon apartment-ic"></span>
+        					<h1>Banking  <span>(219)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon people-ic"></span>
+        					<h1>Children <span>(726)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon resident-ic"></span>
+        					<h1>Residential conveyancing <span>(4293)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        			<div class="cat-list">
+        				<div class="cat-list-info">
+        				<a href="#">
+        					<span class="icon crime-ic"></span>
+        					<h1>Crime (1883)<span>(1883)</span></h1>
+        				</a>
+         				</div>
+        				<div class="cat-list-text">
+        					<p>Lorem ipsum dolor sit amet est nonuti congresti magnium dort dolor sit amet artis scriptoriae portrudi. </p>
+        				</div>
+        			</div>
+        		</div>	
+        	</div>
+        </div>
+        <div class="more-areas">
+        	<div class="container">
+	        	<div class="titel">
+	        		<span>More Areas of Law (46)</span>
+	        	</div>
+        	</div>
+        	<div class="slider-wrap">
+        		<div class="container">
+	        		<div class="areas-slider areas-slick-js">
+	        			<div><a href="#">Employment <span>(182)</span></a></div>
+	        			<div><a href="#">Banking <span>(295)</span></a></div>
+	        			<div><a href="#">Crime <span>(154)</span></a></div>
+	        			<div><a href="#">Family <span>(99)</span></a></div>
+	        			<div><a href="#">Charities <span>(87)</span></a></div>
+	        			<div><a href="#">Employment <span>(182)</span></a></div>
+	        			<div><a href="#">Banking <span>(295)</span></a></div>
+	        			<div><a href="#">Crime <span>(154)</span></a></div>
+	        		</div>
+        		</div>		
+        	</div>	  
+		</div>
+		<div class="legal-articles bg-blue">
+			<div class="container">
+				<div class="news-row">
+					<div class="titel">
+					<span>Legal articles, advice and help</span>
+					</div>
+					<div class="news-post">
+						<div class="news-content">
+							<div class="title">
+								<span>Criminal Injuries Compensation</span>
+							</div>
+							<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <a href="#">Read More</a></p>
+						</div>
+					</div>
+					<div class="news-post">
+						<div class="news-content">
+							<div class="title">
+								<span>Things You Should Know About  Divorce Laws in the US</span>
+							</div>
+							<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority... <a href="#">Read More</a></p>
+						</div>
+					</div>
+					<div class="news-post">
+						<div class="news-content">
+							<div class="title">
+								<span>Criminal Injuries Compensation</span>
+							</div>
+							<p>If you suffer injury as a victim of a crime involving violence then you may be eligible to apply to the Criminal Injuries Compensation Authority (CICA) for compensation. <a href="#">Read More</a></p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+        <div class="category-btn bg-blue">
+        	<div class="container">
+        		<div class="title"><span>Categories</span></div>
+        		<a href="#" class="btn btn-wite">Driving (4)</a>
+        		<a href="#" class="btn btn-wite">General Advice (2)</a>
+        		<a href="#" class="btn btn-wite">Driving (4)</a>
+        		<a href="#" class="btn btn-wite">General Advice (2)</a>
+        	</div>
+        </div>
+        <div class="top-counties">
+        	<div class="container">
+        		<div class="row">
+        			<div class="title"><span>Top Counties</span></div>
+	        			<a href="#" class="btn btn-orange">Greater London <span>(726)</span></a>
+	        			<a href="#" class="btn btn-orange">Greater Manchester <span>(726)</span></a>
+	        			<a href="#" class="btn btn-orange">West Midlands <span>(3150)</span></a>
+	        			<a href="#" class="btn btn-orange">West Yorkshire <span>(3150)</span></a>
+	        			<a href="#" class="btn btn-orange">Kent <span>(726)</span></a>
+	        			<a href="#" class="btn btn-orange">Hampshire <span>(726)</span></a>
+	        			<a href="#" class="btn btn-orange">Lancashire <span>(3150)</span></a>
+	        			<a href="#" class="btn btn-orange">Cheshire <span>(3150)</span></a>
+	        			<a href="#" class="btn btn-orange">Merseyside <span>(3150)</span></a>
+	        			<a href="#" class="btn btn-orange">Nottinghamshire <span>(242)</span></a>
+        			</div>	
+        		</div>
+        	</div>
+        </div>
+		<div class="countru-wrap">
+			<div class="container">
+				<div class="find-solicitor bg-orange">
+					<div class="find-text">
+						<span class="icon planet-ic"></span>
+						<span>Find a Solicitor In...</span>
+					</div>
+					<div class="country-link">
+						<a href="#" class="link">
+							<span class="country">England</span>
+							<span class="count">654 solicitors</span>
+						</a>
+						<a href="#" class="link">
+							<span class="country">Wales</span>
+							<span class="count">1980 solicitors</span>
+						</a>
+						<a href="#" class="link">
+							<span class="country">Scotland</span>
+							<span class="count">1980 solicitors</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+      <div class="solikitors-login bg-blue">
+        	<div class="container">
+        		<div class="row">
+        			<div class="solikitors-login-text w50">
+        			<div class="title"><span>Are you a solicitor?</span></div>
+        			<p>Lorem ipsum dolorae caporium est artis scriptoraie dolor sit amet nonuti congrest magnium cartier excreteur doth paristi.</p>
+        		</div>
+        		<div class="solikitors-login-text w48">
+        			<a href="#" class="btn btn-wite">Sign up as Solicitor</a>
+        			<a href="#" class="btn btn-wite">Solicitor Login</a>
+        		</div>
+        		</div>
+        	</div>
+        </div>
 	</div>
+	<div class="footer">
+		<div class="container">
+			<ul class="footer-nav">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ARTICLES</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">TERMS</a></li>
+				<li><a href="#">COOKIES</a></li>
+			</ul>
+			<img src="img/logo.png" alt="">
+			<span>&copy; Solicitors Guru 2015</span>
+		</div>
+	</div>
+	
+<!--JQvery-->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/slick.min.js"></script>
+<script src="js/plugin.js"></script>
+
 </body>
 </html>
+
+
+                                        

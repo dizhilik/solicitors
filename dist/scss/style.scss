@@ -2,7 +2,11 @@
 @import "fonts";
 @import "reset";
 @import "default-clases";
+@import "sprite";
+@include sprites($spritesheet-sprites);
 @import "layout";
+@import "slick";
+
 
 .inner{
 	@extend %vertical-aling;
@@ -18,14 +22,265 @@
 		color: #fff;
 		margin-bottom: 30px;
 	}
-	span{
+	& > span{
 		font-size: 28px;
 		color: #fff;
+}
+.more-option{
+		display: block;
+		text-align: left;
+		cursor: pointer;
+		color: #fff;
+		margin-top: 15px;
+		font-size: 14px;		
+	}
+.form-control{
+	width: 325px;
+	}
+	.first-form input + input{
+		margin-left: 4px;
+	}
+	.form-btn{
+		width: 115px;
+	}
+	.second-form{
+		display: none;
+		overflow: hidden;
+		margin-top: 15px;
+		.input-group{
+			.input-group-text{
+				float: left;
+				input{
+					width: 240px;
+					height: 50px;
+					margin-left: 10px;
+					border-radius: 2px;  
+					padding: 20px 15px;
+					font-size: 16px;
+					color: #7e878d;
+				}
+				label{
+					margin-left: 10px;
+				}
+			}
+			.input-group-text label{
+				display: block;
+				text-align: left;
+				font-size: 16px;
+				color: #fff;
+				margin-bottom: 10px;
+			}
+			& > label{
+				float: left;
+				font-size: 16px;
+				color: #FFF;
+				margin: 15px 50px 0  0;
+			}	
+			
+		}
+	}	
+}
+
+.slogan{
+	background-color: #f6f8f8;
+   	padding: 30px 20px;
+   	border-bottom: 1px solid #e4ebec;
+    margin: 0 -20px;
+    color: #5a6464;
+   	font-size: 18px;
+   	text-align: center;
+   	a{
+    	color: $genegalColorOrange;
+    }
+}
+.service-wrap{
+	margin-top: 45px;
+	margin-bottom: 30px;
+	clear: both;
+	overflow: hidden;
+	.service-wrap .row{
+		margin: -10px 0;
 	}
 }
-.inner-form .form-control{
-	width: 325px;
+.cat-list{
+	display: inline-block;
+	float: left;
+	width: 33.333%;
+	height: 200px;
+	padding: 0 10px 0 10px;
+	line-height: 1.25;
+	margin-bottom: 30px;
+	.cat-list-info h1{
+		font-size: 20px;
+		color: #f26523;
+		margin: 10px 0;
+		span{
+			font-size: 12px;
+					}
+	}
+	.cat-list-text{
+		font-size: 16px;
+		width: 70%;
+		line-height: 1.25;
+	}
 }
-.first-form input + input{
-	margin-left: 4px;
+.more-areas{
+	.titel{
+		font-size: 24px;
+		color: #515a60;
+		margin-bottom: 20px;
+	}
+}
+.slider-wrap{
+	padding: 15px 0;
+	border-top: 1px solid #e2e6e7;
+	border-bottom: 1px solid #e2e6e7;
+	margin-bottom: 75px;
+	.areas-slider a{
+		color: $genegalColorOrange;
+		font-size: 16px;
+		span{
+			font-size: 12px;
+		}
+	} 
+}
+
+.legal-articles{
+	overflow: hidden;
+	padding: 60px 0 10px 0; 
+	
+	.news-row{
+		margin-left: -12px;
+		margin-right: -12px;
+	}
+	.titel{
+		font-size: 24px;
+		color: #fff;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.news-post{
+		float: left;
+		width: 31%;
+		height: 175px;
+		margin-right: 10px;
+		background: #fff;
+		border-radius: 2px;
+		border-top: 4px solid #90bed5;
+		.news-content{
+			padding: 20px 20px;
+			.title{
+				color: #515a60;
+				font-size: 20px;
+				margin-bottom: 15px;
+			}
+			p{
+				color: #6c767e;
+				font-size: 16px;
+				a{
+					color: #30436b;
+				}
+			}
+		}
+	}
+}
+
+.category-btn{
+	text-align: center;
+	padding: 60px 0 80px 0;
+	overflow: hidden;
+	.title{
+		color: #fff;
+		font-size: 20px;
+		margin-bottom: 45px;
+	}
+	.btn{
+		& + .btn{
+			margin-left: 30px;
+		}
+	}
+}
+.top-counties{
+	padding-top: 60px;
+	text-align: center;
+	.row{
+		margin: 0 -10px;;
+	}
+	.title{
+		color:#515a60;
+		font-size: 38px;
+		margin-bottom: 70px;
+	}
+	.btn{
+		margin-bottom: 30px;
+		span{
+			font-size: 12px;
+		}
+		& + .btn{
+			margin-left: 20px;
+		}
+	}
+}
+.find-solicitor{
+	overflow: hidden;
+	border-radius: 2px;
+	.find-text{
+		width: 50%;
+		float: left;
+		padding: 20px 27px;
+		@extend %vertical-aling;
+		span{
+			font-size: 30px;
+			color: #fff;
+			margin-left: 25px;
+		}
+	}
+	.country-link{
+		float: left;
+		width: 50%;
+		.link{
+			width: 33.3333%;
+			float: left;
+			padding: 33px 0 33px 0;
+			border-left: 2px solid #a54619; 
+			text-align: center;
+			.country{
+				font-size: 18px;
+				color:#fff;
+			}
+			.count{
+				display: block;
+				font-size: 14px;
+				color:#a54619;
+			}
+		}
+	}
+}
+
+.solikitors-login{
+	margin-top: 75px;
+	overflow: hidden;
+	padding: 40px 0 40px 0;
+	vertical-align: bottom;
+	.solikitors-login-text {
+		width: 48%;
+		display: inline-block;
+		.title{
+			font-size: 32px;
+			color: #fff;
+			margin-bottom: 10px;
+			text-align: left;
+		}
+		p{
+			color: #fff;
+			font-size: 16px;
+			text-align: left;
+		}
+		a{
+			margin-right: 32px;
+			margin-left: 10px;
+			text-align: right;
+
+		}
+	}
 }

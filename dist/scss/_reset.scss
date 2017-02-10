@@ -43,7 +43,7 @@ input[type="submit"], button{
   cursor: pointer;
   border: none;
 }
-input, select{
+input:not([type="checkbox"],[type="radio"]), select{
   border: none;
    -webkit-appearance: none;
 }

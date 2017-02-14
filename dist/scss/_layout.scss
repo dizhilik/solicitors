@@ -4,6 +4,13 @@
 	width: $desktopContainerWidth;
 	padding: 0 10px;
 	margin: 0 auto;
+	@media (max-width: 1200px){
+		width: $mediumContainerWidth;
+	}
+	@media (max-width: 1023px){
+		width: 100%;
+	}
+
 }
 .header{
 	height: $desktopHeaderHeight;
@@ -12,6 +19,10 @@
 	.logo{
 		float: left;
 		margin: 15px 0 0 9px;
+		@media(max-width: 467px){
+			width: 65%;
+			
+		}
 	}
 	.header-nav{
 		float: right;
@@ -29,6 +40,9 @@
 				}
 			}
 		}
+		@media (max-width: 767px){
+			display: none;
+		}
 	}
 }
 .main{
@@ -38,7 +52,7 @@
 		border-radius: 2px;
 		background: rgba(0, 0, 0, 0.45);
 		padding: 25px 31px 20px 31px;
-		overflow: height;
+		overflow: hidden;
 		.form-control{
 			height: $generalHeightInput;
 			border-radius: $generalRadius; 
@@ -82,6 +96,10 @@ input[type="checkbox"]{
 			}
 		}
 	}
+	@media(max-width: 959px){
+		width: 100%;
+		margin-top: 10px;
+	}
 }
 .footer{
 	clear: both;
@@ -89,10 +107,19 @@ input[type="checkbox"]{
 	.footer-nav li{
 		display: inline-block;
 		margin-top: 43px; 
-		margin-left: 10px;
 		margin-bottom: 35px;
 		color: #515a60;
 		font-size: 12px;
+		@media (max-width: 486px){
+			font-size: 10px;
+		}
+		& + li{
+			margin-left: 10px;
+			@media (max-width: 486px){
+				margin-left: 5px;
+			}
+		}
+		
 	}
 	img{
 		margin-bottom: 35px;

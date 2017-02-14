@@ -238,7 +238,6 @@
 	height: 50px;
 	width: 220px;
 	padding-top: 15px;
-
 	border: 1px solid #CCC;
 	border-bottom-color: #B3B3B3;
 	border-radius: 2px;
@@ -248,9 +247,9 @@
 	/*box-shadow: inset 1px -1px #F1F1F1, inset -1px 0 #F1F1F1, 0 1px 2px rgba(0,0,0,.1);*/
 	font-size: 16px;
 	color: #7e878d;
-
 	/*text-shadow: 1px 1px #FFF;*/
 }
+
 .jq-selectbox__select:hover {
 	background: #E6E6E6;
 	background: -webkit-linear-gradient(#F6F6F6, #E6E6E6);
@@ -275,6 +274,7 @@
 	width: 100%;
 	text-align: left;
 	padding-left: 10px;
+
 	/*white-space: nowrap;
 	/*text-overflow: ellipsis;*/
 }

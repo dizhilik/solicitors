@@ -17,8 +17,13 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles </a></li>
 				<li><a href="#"> Contact </a></li>
-				<li><a href="#"><span class="icon serch-ic"></span></a></li>
+				<li><span class="icon serch-ic"></span>
+					<div class="serch-input">
+						<input type="text" nema="serch-input-btn" placeholder="serch" class="serch-input-btn">
+					</div> 
+				</li>
 			</ul>
+			
 		</div>
 	</div>
 	<div class="main">
@@ -35,7 +40,7 @@
 						</div>
 						<span class="more-option">+ More Option</span>
 						<div class="second-form">
-							<div class="input-group">
+							<div class="input-group w100">
 								<div class="input-group-text">
 									<label for="choose-languages">Languages</label>
 									<select name="choose-languages">
@@ -44,16 +49,16 @@
 										<option value="">Italic</option>
 									</select>
 								</div>
-								<div class="input-group-text">
+								<div class="input-group-text w30">
 									<label for="name">Name</label>
 									<input type="text" name="name" placeholder="e.g. Joe Bloggs">
 								</div>
-								<div class="input-group-text">
+								<div class="input-group-text w30">
 									<label for="sraid">SRA ID</label>
 									<input type="text" name="sraid" placeholder="">
 								</div>
 							</div>
-							<div class="input-group">
+							<div class="input-group w100">
 								<input type="checkbox" name="legal" id="legal">
 								<label for="legal">Accepts legal aid</label>
 								<input type="checkbox" name="access" id="access">
@@ -316,6 +321,7 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
+  <script src="js/jquery.slicknav.min.js"></script>
   <script src="js/jquery.formstyler.min.js"></script>
   <script src="js/slick.min.js"></script>
 <script src="js/plugin.js"></script>

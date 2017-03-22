@@ -1,2 +1,42 @@
 @import 'core';
 @import 'theme';
+.slicknav_menu {
+  display: inline-block;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+.slicknav_nav {
+  color: #fff;
+  margin-top: 70px;
+  padding: 15px 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 10px;
+  background: #202525;
+  width: 100%;
+  text-align: right;
+  a{
+    font-size: 20px;
+    display: inline-block;
+  }
+
+  .serch-input-btn{
+
+     overflow: hidden;
+      width: 90%;
+      margin-left: 10px;
+      margin-right: 10px;
+      height: 57px;
+      border-radius: 2px;
+      font-size: 16px;
+      color: #7e878d;
+      padding-left: 17px;
+      padding-right: 15px;
+
+  }
+}

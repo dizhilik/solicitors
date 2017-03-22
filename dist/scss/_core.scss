@@ -57,11 +57,17 @@
 }
 .slicknav_nav {
 	clear: both;
+
+
+	text-align: right;
+	overflow: auto;
 	ul {
 		display: block;
+
 	}
 	li {
 		display: block;
+		width: 100%;
 	}
 	.slicknav_arrow {
 		font-size: 0.8em;

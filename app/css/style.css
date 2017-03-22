@@ -482,11 +482,14 @@ input[type="checkbox"] {
     clear: both; }
 
 .slicknav_nav {
-  clear: both; }
+  clear: both;
+  text-align: right;
+  overflow: auto; }
   .slicknav_nav ul {
     display: block; }
   .slicknav_nav li {
-    display: block; }
+    display: block;
+    width: 100%; }
   .slicknav_nav .slicknav_arrow {
     font-size: 0.8em;
     margin: 0 0 0 0.4em; }
@@ -510,8 +513,7 @@ input[type="checkbox"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
-  padding: 5px;
-  position: relative; }
+  padding: 5px; }
   .slicknav_menu * {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
@@ -581,6 +583,46 @@ input[type="checkbox"] {
   height: 44px; }
 
 .slicknav_menu {
+  display: inline-block;
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px; }
+
+.slicknav_nav {
+  color: #fff;
+  margin-top: 70px;
+  padding: 15px 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 10px;
+  background: #202525;
+  width: 100%;
+  text-align: right; }
+  .slicknav_nav a {
+    font-size: 20px;
+    display: inline-block; }
+  .slicknav_nav .serch-input-btn {
+    overflow: hidden;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 57px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    font-size: 16px;
+    color: #7e878d;
+    padding-left: 17px;
+    padding-right: 15px; }
+
+header {
+  position: relative; }
+
+.slicknav_menu {
   display: none; }
   @media (max-width: 767px) {
     .slicknav_menu {
@@ -589,7 +631,14 @@ input[type="checkbox"] {
       background: #fff; } }
 
 .serch-ic {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
+
+.serch-input-btn {
+  display: none; }
+  @media (max-width: 767px) {
+    .serch-input-btn {
+      display: inline-block; } }
 
 .serch-input {
   display: none;
@@ -660,8 +709,17 @@ input[type="checkbox"] {
   display: none;
   overflow: hidden;
   margin-top: 15px; }
+  .inner-block .second-form .input-group label > span {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1.2; }
   .inner-block .second-form .input-group .input-group-text {
     float: left; }
+    .inner-block .second-form .input-group .input-group-text + .input-group-text {
+      margin-left: 10px; }
+      @media (max-width: 959px) {
+        .inner-block .second-form .input-group .input-group-text + .input-group-text {
+          margin-left: 0; } }
     @media (max-width: 959px) {
       .inner-block .second-form .input-group .input-group-text {
         width: 100%; } }
@@ -673,19 +731,20 @@ input[type="checkbox"] {
               border-radius: 2px;
       padding: 20px 15px;
       font-size: 16px;
-      color: #7e878d;
-      margin-left: 10px; }
+      color: #7e878d; }
       @media (max-width: 959px) {
         .inner-block .second-form .input-group .input-group-text input {
-          width: 100%; } }
-    .inner-block .second-form .input-group .input-group-text + label {
-      margin-left: 10px; }
+          width: 100%;
+          margin-left: 0; } }
   .inner-block .second-form .input-group .input-group-text label {
     display: block;
     text-align: left;
     font-size: 16px;
     color: #fff;
     margin-bottom: 10px; }
+    @media (max-width: 959px) {
+      .inner-block .second-form .input-group .input-group-text label {
+        margin-top: 10px; } }
   .inner-block .second-form .input-group > label {
     float: left;
     font-size: 16px;
@@ -693,7 +752,8 @@ input[type="checkbox"] {
     margin: 15px 50px 0  0; }
     @media (max-width: 959px) {
       .inner-block .second-form .input-group > label {
-        width: 100; } }
+        width: 100%;
+        text-align: left; } }
 
 .slogan {
   background-color: #f6f8f8;
@@ -809,20 +869,20 @@ input[type="checkbox"] {
     color: #fff;
     font-size: 20px;
     margin-bottom: 45px; }
-  @media (max-width: 767px) {
+  @media (max-width: 959px) {
     .category-btn .btn {
       width: 100%;
       margin-top: 10px; } }
   .category-btn .btn + .btn {
     margin-left: 30px; }
-    @media (max-width: 767px) {
+    @media (max-width: 959px) {
       .category-btn .btn + .btn {
         margin-left: auto; } }
 
 .top-counties {
   padding-top: 60px;
   text-align: center; }
-  @media (max-width: 767px) {
+  @media (max-width: 959px) {
     .top-counties {
       padding: 0 10px 0 10px; } }
   .top-counties .row {
@@ -833,13 +893,14 @@ input[type="checkbox"] {
     margin-bottom: 70px; }
     @media (max-width: 767px) {
       .top-counties .title {
-        font-size: 25px; } }
+        font-size: 25px;
+        margin-top: 20px; } }
     @media (max-width: 599px) {
       .top-counties .title {
         font-size: 18px; } }
   .top-counties .btn {
     margin-bottom: 30px; }
-    @media (max-width: 767px) {
+    @media (max-width: 959px) {
       .top-counties .btn {
         width: 100%;
         text-align: center; } }
@@ -847,47 +908,60 @@ input[type="checkbox"] {
       font-size: 12px; }
     .top-counties .btn + .btn {
       margin-left: 20px; }
-      @media (max-width: 767px) {
+      @media (max-width: 959px) {
         .top-counties .btn + .btn {
           margin-left: auto; } }
 
 .find-solicitor {
-  overflow: hidden;
+  margin: 20px 0;
   -webkit-border-radius: 2px;
-          border-radius: 2px; }
+          border-radius: 2px;
+  overflow: hidden;
+  text-align: left; }
   .find-solicitor .find-text {
     width: 50%;
     float: left;
-    padding: 20px 27px; }
+    padding: 20px 0 20px 27px; }
+    @media (max-width: 959px) {
+      .find-solicitor .find-text {
+        width: 100%;
+        text-align: center; } }
+    @media (max-width: 479px) {
+      .find-solicitor .find-text {
+        padding: 10px 10px; } }
     .find-solicitor .find-text span {
       font-size: 30px;
       color: #fff;
       margin-left: 25px; }
-    @media (max-width: 959px) {
-      .find-solicitor .find-text {
-        width: 100%;
-        text-align: center;
-        font-size: 20px; } }
-    @media (max-width: 599px) {
-      .find-solicitor .find-text {
-        font-size: 16px; } }
+      @media (max-width: 959px) {
+        .find-solicitor .find-text span {
+          font-size: 30px; } }
+      @media (max-width: 479px) {
+        .find-solicitor .find-text span {
+          font-size: 25px;
+          display: block; } }
+      @media (max-width: 320px) {
+        .find-solicitor .find-text span {
+          font-size: 20px;
+          display: block; } }
     @media (max-width: 479px) {
       .find-solicitor .find-text .planet-ic {
-        display: block;
+        display: inline-block;
         margin-bottom: 5px; } }
   .find-solicitor .country-link {
-    float: left;
-    width: 50%; }
+    overflow: hidden;
+    width: 50%;
+    float: left; }
     @media (max-width: 959px) {
       .find-solicitor .country-link {
         width: 100%;
         text-align: center; } }
     .find-solicitor .country-link .link {
-      width: 33.3333%;
+      width: 33.333%;
       float: left;
-      padding: 33px 0 33px 0;
-      border-left: 2px solid #a54619;
-      text-align: center; }
+      padding: 37px;
+      text-align: center;
+      border-left: 1px solid #a54619; }
       @media (max-width: 959px) {
         .find-solicitor .country-link .link {
           border: none; } }
@@ -918,8 +992,9 @@ input[type="checkbox"] {
   vertical-align: bottom; }
   .solikitors-login .solikitors-login-text {
     width: 48%;
-    display: inline-block; }
-    @media (max-width: 767px) {
+    display: inline-block;
+    text-align: right; }
+    @media (max-width: 959px) {
       .solikitors-login .solikitors-login-text {
         width: 100%;
         text-align: center;
@@ -929,16 +1004,29 @@ input[type="checkbox"] {
       color: #fff;
       margin-bottom: 10px;
       text-align: left; }
+      @media (max-width: 959px) {
+        .solikitors-login .solikitors-login-text .title {
+          text-align: center;
+          margin-bottom: 20px; } }
     .solikitors-login .solikitors-login-text p {
       color: #fff;
       font-size: 16px;
       text-align: left; }
-    .solikitors-login .solikitors-login-text .btn {
-      text-align: right; }
-      @media (max-width: 767px) {
-        .solikitors-login .solikitors-login-text .btn {
-          width: 100%;
+      @media (max-width: 959px) {
+        .solikitors-login .solikitors-login-text p {
           text-align: center;
-          margin-top: 10px; } }
+          margin: 0 auto;
+          margin-bottom: 20px;
+          width: 90%; } }
+    .solikitors-login .solikitors-login-text .btn + .btn {
+      margin-left: 45px; }
+      @media (max-width: 959px) {
+        .solikitors-login .solikitors-login-text .btn + .btn {
+          margin-left: 0; } }
+    @media (max-width: 959px) {
+      .solikitors-login .solikitors-login-text .btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px; } }
     .solikitors-login .solikitors-login-text + .btn {
       margin-left: 39px; }
